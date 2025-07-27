@@ -1,27 +1,22 @@
+
 {
   "name": "Blaster",
   "short_name": "Blaster",
-  "start_url": "/Shadow-blaster/index.html",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#000000",
-  "theme_color": "#000000",
-  "description": "Jogo arcade de tiro com sombras e batalhas intergal\u00e1cticas!",
-  "id": "/",
-  "launch_handler": {
-    "client_mode": "auto"
-  },
+  "theme_color": "#0f0f0f",
+  "description": "Jogo arcade de tiro com sombras e batalhas intergalácticas!",
   "icons": [
     {
       "src": "icon-192.png",
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
+      "type": "image/png"
     },
     {
       "src": "icon-512.png",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
+      "type": "image/png"
     }
   ]
 }
