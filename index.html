@@ -1,10 +1,23 @@
-<link rel="manifest" href="manifest.json">
-<script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js')
-      .then(() => console.log('✅ Service Worker registrado com sucesso!'))
-      .catch(err => console.error('❌ Falha ao registrar Service Worker:', err));
-  }
-</script>
+
 <!DOCTYPE html>
-<!-- (conteúdo completo do código atualizado será automaticamente incluído aqui) -->
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Shadow Blaster</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" type="image/png" href="icon-192.png" />
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker
+          .register('service-worker.js')
+          .then(() => console.log('✅ Service Worker registrado!'))
+          .catch(err => console.error('❌ Erro no SW:', err));
+      }
+    </script>
+  </head>
+  <body>
+    <canvas id="gameCanvas"></canvas>
+    <script src="game.js"></script>
+  </body>
+</html>
