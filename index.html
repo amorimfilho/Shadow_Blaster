@@ -1,21 +1,33 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Blaster</title>
-  <link rel="manifest" href="manifest.json">
-</head>
-<body>
-  <h1>Blaster - Jogo de Tiro Arcade!</h1>
-  <p>Toque na tela para começar!</p>
+  <title>Shadow Blaster</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon-192.png" type="image/png">
   <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('service-worker.js')
-        .then(() => console.log("✅ Service Worker registrado!"))
-        .catch(err => console.error("❌ Erro no Service Worker", err));
+        .then(() => console.log("✅ Service Worker registrado com sucesso!"))
+        .catch(err => console.error("❌ Falha ao registrar o Service Worker:", err));
     }
   </script>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      color: lime;
+      font-family: monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    h1 { font-size: 3rem; }
+  </style>
+</head>
+<body>
+  <h1>🚀 Shadow Blaster Iniciado!</h1>
 </body>
 </html>
