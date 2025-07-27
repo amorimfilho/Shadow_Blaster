@@ -1,11 +1,11 @@
 {
-  "name": "Shadow Blaster",
+  "name": "Blaster",
   "short_name": "Blaster",
-  "description": "Jogo arcade de tiro com sombras e batalhas intergalácticas!",
-  "start_url": ".",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#000000",
-  "theme_color": "#1a1a1a",
+  "theme_color": "#000000",
+  "description": "Jogo arcade de tiro com sombras e batalhas intergalácticas!",
   "orientation": "portrait",
   "icons": [
     {
@@ -21,8 +21,11 @@
       "purpose": "any"
     }
   ],
-  "id": "com.amorimfilho.shadowblaster",
   "launch_handler": {
-    "client_mode": "navigate-existing"
-  }
+    "client_mode": "focus-existing"
+  },
+  "id": "/blaster",
+  "app_id": "blaster.amorimfilho",
+  "screenshots": [],
+  "categories": ["games", "arcade"]
 }
